@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation"
+import { DiseaseConsultationForm } from "@/components/disease-consultation-form"
 
 // This would typically come from a database or API
 const diseasesData = {
@@ -55,7 +56,7 @@ const diseasesData = {
   }
 }
 
-export default function DiseasePage({ params }: { params: { slug: string } }) {
+export default async function DiseasePage({ params }: { params: { slug: string } }) {
   const disease = diseasesData[params.slug as keyof typeof diseasesData]
 
   if (!disease) {
@@ -68,7 +69,7 @@ export default function DiseasePage({ params }: { params: { slug: string } }) {
         <h1 className="text-4xl font-bold mb-6">{disease.title}</h1>
         <p className="text-lg text-muted-foreground mb-8">{disease.longDescription}</p>
         
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 mb-16">
           <div className="space-y-4">
             <h2 className="text-2xl font-semibold mb-4">Common Symptoms</h2>
             <ul className="list-disc list-inside space-y-2">
@@ -86,6 +87,14 @@ export default function DiseasePage({ params }: { params: { slug: string } }) {
               ))}
             </ul>
           </div>
+        </div>
+
+        <div className="bg-muted rounded-lg p-8">
+          <h2 className="text-3xl font-bold text-center mb-2">Get Treatment for {disease.title}</h2>
+          <p className="text-center text-muted-foreground mb-8">
+            Fill out the form below and our specialists will contact you shortly.
+          </p>
+          <DiseaseConsultationForm diseaseName={disease.title} />
         </div>
       </div>
     </div>
