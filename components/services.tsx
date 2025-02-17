@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import Image from "next/image"
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
 const services = [
@@ -9,16 +10,19 @@ const services = [
     title: "Chronic Diseases",
     description: "Effective treatment for long-term health conditions",
     image: "/hair_loss.webp?height=400&width=600",
+    slug: "chronic-diseases"
   },
   {
     title: "Skin Disorders",
     description: "Natural solutions for various skin conditions",
     image: "/placeholder.svg?height=400&width=600",
+    slug: "skin-disorders"
   },
   {
     title: "Digestive Issues",
     description: "Holistic treatment for digestive system problems",
     image: "/placeholder.svg?height=400&width=600",
+    slug: "digestive-issues"
   },
   {
     title: "Chronic Diseases",
@@ -74,7 +78,9 @@ export function Services() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-black/0 p-6 flex flex-col justify-end">
                 <h3 className="text-xl font-semibold text-white mb-2">{service.title}</h3>
                 <p className="text-gray-200 mb-4">{service.description}</p>
-                <Button variant="secondary">Learn More</Button>
+                <Link href={`/diseases/${service.slug}`}>
+                  <Button variant="secondary" className="w-full">Learn More</Button>
+                </Link>
               </div>
             </motion.div>
           ))}
