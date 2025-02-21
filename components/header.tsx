@@ -28,6 +28,7 @@ export function Header() {
           <Link href="/about" className="text-foreground/60 hover:text-foreground">
             About
           </Link>
+          
           <Link href="/contact" className="text-foreground/60 hover:text-foreground">
             Contact
           </Link>
