@@ -41,29 +41,66 @@ export function Header() {
 
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild className="md:hidden">
-            <Button variant="ghost" size="icon">
+            <Button 
+              variant="ghost" 
+              size="icon"
+              className="hover:bg-emerald-600/10 text-emerald-500"
+            >
               <Menu className="h-6 w-6" />
             </Button>
           </SheetTrigger>
-          <SheetContent side="right">
-            <nav className="flex flex-col space-y-4">
-              <Link href="/" className="text-foreground/60 hover:text-foreground">
-                Home
-              </Link>
-              <Link href="/diseases" className="text-foreground/60 hover:text-foreground">
-                Diseases
-              </Link>
-              <Link href="/about" className="text-foreground/60 hover:text-foreground">
-                About
-              </Link>
-              <Link href="/blog" className="text-foreground/60 hover:text-foreground">
-                Blog
-              </Link>
-              <Link href="/contact" className="text-foreground/60 hover:text-foreground">
-                Contact
-              </Link>
-              {/* <ModeToggle /> */}
-              <Button className="w-full">Book Appointment</Button>
+          <SheetContent 
+            side="right"
+            className="w-full sm:w-[400px] border-l border-emerald-900/20 bg-background/95 backdrop-blur-xl p-0"
+          >
+            <nav className="flex flex-col h-full">
+              <div className="p-6 border-b border-emerald-900/20">
+                <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-emerald-600">
+                  Homeopathy Clinic
+                </span>
+              </div>
+              
+              <div className="flex-1 overflow-auto py-6 px-6">
+                <div className="space-y-6">
+                  <Link 
+                    href="/" 
+                    className="flex items-center text-muted-foreground hover:text-emerald-500 transition-all hover:translate-x-2"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    <span className="text-lg">Home</span>
+                  </Link>
+                  <Link 
+                    href="/diseases" 
+                    className="flex items-center text-muted-foreground hover:text-emerald-500 transition-all hover:translate-x-2"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    <span className="text-lg">Diseases</span>
+                  </Link>
+                  <Link 
+                    href="/about" 
+                    className="flex items-center text-muted-foreground hover:text-emerald-500 transition-all hover:translate-x-2"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    <span className="text-lg">About</span>
+                  </Link>
+                  <Link 
+                    href="/contact" 
+                    className="flex items-center text-muted-foreground hover:text-emerald-500 transition-all hover:translate-x-2"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    <span className="text-lg">Contact</span>
+                  </Link>
+                </div>
+              </div>
+
+              <div className="p-6 border-t border-emerald-900/20 bg-emerald-950/30 backdrop-blur-sm">
+                <Button 
+                  className="w-full bg-emerald-600 hover:bg-emerald-500 text-white shadow-lg shadow-emerald-600/20 transition-all hover:scale-105"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Book Appointment
+                </Button>
+              </div>
             </nav>
           </SheetContent>
         </Sheet>

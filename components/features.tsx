@@ -28,7 +28,7 @@ const features = [
 
 export function Features() {
   return (
-    <section className="py-20 bg-gradient-to-b from-background to-muted">
+    <section className="py-20 bg-gradient-to-b from-background to-emerald-950">
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
