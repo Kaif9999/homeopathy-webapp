@@ -46,7 +46,7 @@ export function ConsultationForm() {
   }
 
   return (
-    <section className="py-16 bg-muted">
+    <section className="py-20 bg-gradient-to-b from-background to-muted">
       <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -55,31 +55,34 @@ export function ConsultationForm() {
           viewport={{ once: true }}
           className="max-w-2xl mx-auto text-center mb-12"
         >
-          <h2 className="text-3xl font-bold mb-4">Get a Free Consultation</h2>
-          <p className="text-muted-foreground">
+          <h2 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-emerald-600">
+            Get a Free Consultation
+          </h2>
+          <p className="text-muted-foreground text-lg">
             Are you suffering from chronic diseases? Our experts are here to help.
           </p>
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          viewport={{ once: true }}
-          className="max-w-md mx-auto"
-        >
+        <div className="max-w-xl mx-auto">
           <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6 border-2 rounded-lg p-8 drop-shadow dark:border-2 dark:border-gray-500">
+            <form 
+              onSubmit={form.handleSubmit(onSubmit)} 
+              className="space-y-6 bg-zinc-900/50 backdrop-blur-sm border border-emerald-900/30 rounded-2xl p-8 shadow-lg hover:shadow-emerald-600/10 transition-all duration-300"
+            >
               <FormField
                 control={form.control}
                 name="name"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Full Name</FormLabel>
+                    <FormLabel className="text-foreground">Name</FormLabel>
                     <FormControl>
-                      <Input placeholder="John Doe" {...field} />
+                      <Input 
+                        placeholder="Your name" 
+                        className="bg-background/50 border-emerald-900/30 focus:border-emerald-600/50 transition-colors rounded-lg" 
+                        {...field} 
+                      />
                     </FormControl>
-                    <FormMessage />
+                    <FormMessage className="text-red-400" />
                   </FormItem>
                 )}
               />
@@ -88,11 +91,15 @@ export function ConsultationForm() {
                 name="email"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Email</FormLabel>
+                    <FormLabel className="text-foreground">Email</FormLabel>
                     <FormControl>
-                      <Input placeholder="john@example.com" {...field} />
+                      <Input 
+                        placeholder="john@example.com" 
+                        className="bg-background/50 border-emerald-900/30 focus:border-emerald-600/50 transition-colors rounded-lg" 
+                        {...field} 
+                      />
                     </FormControl>
-                    <FormMessage />
+                    <FormMessage className="text-red-400" />
                   </FormItem>
                 )}
               />
@@ -101,11 +108,15 @@ export function ConsultationForm() {
                 name="phone"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Phone Number</FormLabel>
+                    <FormLabel className="text-foreground">Phone Number</FormLabel>
                     <FormControl>
-                      <Input placeholder="+1 (555) 000-0000" {...field} />
+                      <Input 
+                        placeholder="+1 (555) 000-0000" 
+                        className="bg-background/50 border-emerald-900/30 focus:border-emerald-600/50 transition-colors rounded-lg" 
+                        {...field} 
+                      />
                     </FormControl>
-                    <FormMessage />
+                    <FormMessage className="text-red-400" />
                   </FormItem>
                 )}
               />
@@ -114,20 +125,27 @@ export function ConsultationForm() {
                 name="message"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Your Message</FormLabel>
+                    <FormLabel className="text-foreground">Your Message</FormLabel>
                     <FormControl>
-                      <Textarea placeholder="Please describe your health concerns..." {...field} />
+                      <Textarea 
+                        placeholder="Please describe your health concerns..." 
+                        className="bg-background/50 border-emerald-900/30 focus:border-emerald-600/50 transition-colors rounded-lg min-h-[120px]" 
+                        {...field} 
+                      />
                     </FormControl>
-                    <FormMessage />
+                    <FormMessage className="text-red-400" />
                   </FormItem>
                 )}
               />
-              <Button type="submit" className="w-full">
-                Submit
+              <Button 
+                type="submit" 
+                className="w-full bg-emerald-600 hover:bg-emerald-500 text-white shadow-lg shadow-emerald-600/20 transition-all hover:scale-105 rounded-lg"
+              >
+                Submit Request
               </Button>
             </form>
           </Form>
-        </motion.div>
+        </div>
       </div>
     </section>
   )

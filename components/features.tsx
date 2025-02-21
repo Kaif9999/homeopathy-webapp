@@ -28,7 +28,7 @@ const features = [
 
 export function Features() {
   return (
-    <section className="py-16">
+    <section className="py-20 bg-gradient-to-b from-background to-muted">
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
@@ -38,11 +38,11 @@ export function Features() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="p-6 rounded-lg bg-card border-2 drop-shadow"
+              className="p-8 rounded-xl bg-zinc-900/50 backdrop-blur-sm border border-emerald-900/30 hover:border-emerald-600/50 transition-all duration-300 hover:shadow-lg hover:shadow-emerald-600/10 hover:-translate-y-1 group"
             >
-              <feature.icon className="w-12 h-12 text-primary mb-4" />
-              <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-              <p className="text-muted-foreground">{feature.description}</p>
+              <feature.icon className="w-12 h-12 text-emerald-500 mb-4 group-hover:scale-110 transition-transform duration-300" />
+              <h3 className="text-xl font-semibold mb-2 text-white group-hover:text-emerald-400 transition-colors">{feature.title}</h3>
+              <p className="text-gray-400">{feature.description}</p>
             </motion.div>
           ))}
         </div>
