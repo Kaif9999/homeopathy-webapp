@@ -39,6 +39,26 @@ const services = [
     description: "Holistic treatment for digestive system problems",
     image: "/placeholder.svg?height=400&width=600",
   },
+  {
+    title: "Skin Disorders",
+    description: "Natural solutions for various skin conditions",
+    image: "/placeholder.svg?height=400&width=600",
+  },
+  {
+    title: "Digestive Issues",
+    description: "Holistic treatment for digestive system problems",
+    image: "/placeholder.svg?height=400&width=600",
+  },
+  {
+    title: "Skin Disorders",
+    description: "Natural solutions for various skin conditions",
+    image: "/placeholder.svg?height=400&width=600",
+  },
+  {
+    title: "Digestive Issues",
+    description: "Holistic treatment for digestive system problems",
+    image: "/placeholder.svg?height=400&width=600",
+  },
 ]
 
 export function Services() {
