@@ -7,23 +7,35 @@ import { Button } from "@/components/ui/button"
 
 const services = [
   {
-    title: "Chronic Disease Treatment",
-    description: "Effective natural solutions for long-term health conditions",
+    title: "Sexual Health",
+    description: "Effective natural solutions for sexual health and wellness",
     image: "/images/chronic.jpg",
-    slug: "chronic-diseases"
+    slug: "sexual_wellness"
   },
   {
     title: "Skin & Allergy Care",
     description: "Holistic treatment for skin conditions and allergies",
     image: "/images/skin.jpg",
-    slug: "skin-disorders"
+    slug: "skin_disease"
   },
   {
-    title: "Mental Health Support",
-    description: "Natural remedies for mental and emotional wellbeing",
-    image: "/images/mental.jpg",
-    slug: "mental-health"
-  }
+    title: "Digestion Care",
+    description: "Natural remedies for digestion and gut health",
+    image: "/images/digestion.jpg",
+    slug: "digestion_care"
+  },
+  {
+    title: "Hair Fall",
+    description: "Natural solutions for hair loss and scalp health",
+    image: "/images/hairfall.jpg",
+    slug: "hairfall"
+  },
+  {
+    title: "Other Health Issues",
+    description: "Comprehensive homeopathic care for various health conditions",
+    image: "/images/other.jpg",
+    slug: "other_health"
+  },
 ]
 
 export function Services() {
@@ -72,7 +84,7 @@ export function Services() {
                 <p className="text-muted-foreground mb-6">
                   {service.description}
                 </p>
-                <Link href={`/services/${service.slug}`}>
+                <Link href={`/${service.slug}`}>
                   <Button 
                     variant="outline" 
                     className="w-full border-2 border-emerald-600/50 text-white hover:bg-emerald-600/20 shadow-lg shadow-emerald-600/10 transition-all hover:scale-105"
