@@ -15,7 +15,7 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-emerald-900/20 bg-background/80 backdrop-blur-xl">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2 group">
-          <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-emerald-700 group-hover:from-blue-400 group-hover:to-emerald-700 group-hover:scale-105 transition-transform duration-300" role="heading">
+          <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-emerald-700 group-hover:from-blue-400 group-hover:to-emerald-400 group-hover:scale-105 transition-transform duration-300" role="heading">
             PublicHomeopathy
           </span>
           <span className="text-emerald-500 font-semibold group-hover:text-emerald-600 transition-colors duration-300">

@@ -28,19 +28,19 @@ export function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className="font-semibold mb-6 text-lg bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-emerald-600">Contact Us</h3>
-            <ul className="space-y-3 text-sm text-muted-foreground bg-emerald-950/30 p-6 rounded-2xl backdrop-blur-sm border border-emerald-900/20">
+            <h3 className="font-semibold mb-6 text-lg bg-clip-text text-transparent bg-gradient-to-r from-emerald-300 to-emerald-900">Contact Us</h3>
+            <ul className="space-y-3 text-sm text-muted-foreground  p-4 rounded-lg backdrop-blur-sm">
               <li className="flex items-center gap-2">
-                <span className="text-emerald-500">📞</span> +(91) 95480-26291
+          <span className="text-emerald-500">📞</span> +(91) 95480-26291
               </li>
               <li className="flex items-center gap-2">
-                <span className="text-emerald-500">✉️</span> Publicclinichomeopathic@gmail.com
+          <span className="text-emerald-500">✉️</span> Publicclinichomeopathic@gmail.com
               </li>
             </ul>
           </div>
         </div>
         <div className="mt-12 pt-8 border-t border-emerald-900/20 text-center text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Publichomepathy Clinic. All rights reserved.
+          © {new Date().getFullYear()} PublicHomepathy Clinic. All rights reserved.
         </div>
       </div>
     </footer>
