@@ -3,6 +3,7 @@ import { Features } from "@/components/features"
 import { ConsultationForm } from "@/components/consultation-form"
 import { Testimonials } from "@/components/testimonials"
 import { Services } from "@/components/services"
+import { About } from "@/components/about"
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Services />
       <ConsultationForm />
       <Testimonials />
+      <About />
     </div>
   )
 }
