@@ -2,7 +2,6 @@
 
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
-// import heroImage from "@/public/heroSection.jpeg"
 
 export function HeroSection() {
   return (
