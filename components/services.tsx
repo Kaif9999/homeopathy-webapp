@@ -9,31 +9,31 @@ const services = [
   {
     title: "Sexual Health",
     description: "Effective natural solutions for sexual health and wellness",
-    image: "/images/chronic.jpg",
+    image: "/sexualHealth.jpeg",
     slug: "sexual_wellness"
   },
   {
     title: "Skin & Allergy Care",
     description: "Holistic treatment for skin conditions and allergies",
-    image: "/images/skin.jpg",
+    image: "/skin.jpeg",
     slug: "skin_disease"
   },
   {
     title: "Digestion Care",
     description: "Natural remedies for digestion and gut health",
-    image: "/images/digestion.jpg",
+    image: "/digestionCare.jpeg",
     slug: "digestion_care"
   },
   {
     title: "Hair Fall",
     description: "Natural solutions for hair loss and scalp health",
-    image: "/images/hairfall.jpg",
+    image: "/hairFall.jpeg",
     slug: "hairfall"
   },
   {
     title: "Other Health Issues",
     description: "Comprehensive homeopathic care for various health conditions",
-    image: "/images/other.jpg",
+    image: "/otherDiseases.jpeg",
     slug: "other_health"
   },
 ]

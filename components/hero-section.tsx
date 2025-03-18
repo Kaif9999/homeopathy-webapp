@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
+// import heroImage from "@/public/heroSection.jpeg"
 
 export function HeroSection() {
   return (
@@ -9,7 +10,7 @@ export function HeroSection() {
       <div
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: `url('https://www.pmrihomeo.com/wp-content/uploads/2023/01/Why-Homeopathy-Tablets-are-Sweet.jpg')`,
+          backgroundImage: `url('/heroSection.jpeg')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           filter: "brightness(0.3)",
