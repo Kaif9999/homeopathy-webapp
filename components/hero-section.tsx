@@ -38,6 +38,7 @@ export function HeroSection() {
               Learn More
             </Button>
           </div>
+        <div className="pt-10 text-lg text-white"> Contact at +91 95480-26291</div>
         </motion.div>
       </div>
     </section>
