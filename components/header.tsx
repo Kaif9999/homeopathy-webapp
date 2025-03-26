@@ -6,7 +6,6 @@ import { ModeToggle } from "@/components/mode-toggle"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Menu } from "lucide-react"
 import { useState } from "react"
-import type { ReactNode } from "react"
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -37,7 +36,7 @@ export function Header() {
             Contact
           </Link>
           <Button className="bg-emerald-600/90 hover:bg-emerald-500 text-white shadow-lg shadow-emerald-600/20 transition-all hover:scale-105 rounded-full px-6">
-            Book Appointment
+            Book Free Consultation
           </Button>
         </nav>
 

@@ -17,7 +17,7 @@ export const About = () => {
             >
               <path d="M8 0L9.79611 6.20389L16 8L9.79611 9.79611L8 16L6.20389 9.79611L0 8L6.20389 6.20389L8 0Z" />
             </svg>
-            <span className="text-sm font-medium animate-pulse bg-gradient-to-r from-blue-500 to-emerald-300 bg-clip-text text-transparent transition-colors duration-10000 hover:from-blue-500 hover:to-white">
+            <span className="text-lg font-medium animate-pulse bg-gradient-to-r from-blue-500 to-emerald-300 bg-clip-text text-transparent transition-colors duration-10000 hover:from-blue-500 hover:to-white">
               Lab Tests Available
             </span>
           </div>

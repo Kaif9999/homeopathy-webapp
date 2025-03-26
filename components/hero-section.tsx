@@ -32,7 +32,7 @@ export function HeroSection() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="text-lg bg-emerald-600 hover:bg-emerald-500 text-white shadow-lg shadow-emerald-600/20 transition-all hover:scale-105">
-              Book Consultation
+              Book Free Consultation
             </Button>
             <Button size="lg" variant="outline" className="text-lg border-2 border-emerald-600/50 text-white hover:bg-emerald-600/20 shadow-lg shadow-emerald-600/10 transition-all hover:scale-105">
               Learn More
